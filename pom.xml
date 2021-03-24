@@ -10,7 +10,7 @@
 
   <groupId>org.sonarsource.lua</groupId>
   <artifactId>lua</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>Sonar Lua</name>
@@ -55,10 +55,10 @@
     <license.title>SonarQube Lua Plugin</license.title>
     <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
 
-    <sonar.version>5.6</sonar.version>
-    <sslr.version>1.21</sslr.version>
-    <logback.version>1.0.13</logback.version>
-    <junit.version>4.12</junit.version>
+    <sonar.version>8.7.1.42226</sonar.version>
+    <sslr.version>1.23</sslr.version>
+    <logback.version>1.2.3</logback.version>
+    <junit.version>4.13.1</junit.version>
     <fest.version>1.4</fest.version>
     <orchestrator.version>3.12</orchestrator.version>
 
@@ -183,6 +183,8 @@
         <artifactId>slf4j-api</artifactId>
         <version>1.7.21</version>
       </dependency>
+
+
     </dependencies>
   </dependencyManagement>
 

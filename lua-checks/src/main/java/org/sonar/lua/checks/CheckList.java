@@ -19,8 +19,9 @@
  */
 package org.sonar.lua.checks;
 
-import com.google.common.collect.ImmutableList;
+//import com.google.common.collect.ImmutableList;
 
+import java.util.Arrays;
 import java.util.List;
 
 public final class CheckList {
@@ -32,26 +33,28 @@ public final class CheckList {
   private CheckList() {
   }
 
+  static List<Class> classList = Arrays.asList(
+          XPathCheck.class,
+          CommentRegularExpressionCheck.class,
+          TooManyLinesInFileCheck.class,
+          FunctionComplexityCheck.class,
+          MethodComplexityCheck.class,
+          FunctionWithTooManyParametersCheck.class,
+          LocalFunctionNameCheck.class,
+          TableComplexityCheck.class,
+          NestedControlFlowDepthCheck.class,
+          LineLengthCheck.class,
+          FileComplexityCheck.class,
+          TableWithTooManyFieldsCheck.class,
+          FunctionCallComplexityCheck.class,
+          NestedFunctionsDepthCheck.class,
+          NestedTablesDepthCheck.class,
+          LocalFunctionComplexityCheck.class
+  );
+
   public static List<Class> getChecks() {
-    return ImmutableList.<Class>of(
-      
-      XPathCheck.class,
-      CommentRegularExpressionCheck.class,
-      TooManyLinesInFileCheck.class,
-      FunctionComplexityCheck.class,
-      MethodComplexityCheck.class,
-      FunctionWithTooManyParametersCheck.class,
-      LocalFunctionNameCheck.class,
-      TableComplexityCheck.class,
-      NestedControlFlowDepthCheck.class,
-      LineLengthCheck.class,
-      FileComplexityCheck.class,
-      TableWithTooManyFieldsCheck.class,
-      FunctionCallComplexityCheck.class,
-      NestedFunctionsDepthCheck.class,
-      NestedTablesDepthCheck.class,
-      LocalFunctionComplexityCheck.class
-     );
+
+    return classList;
   }
 
 }
