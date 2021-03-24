@@ -103,11 +103,12 @@ public class LuaSquidSensor implements Sensor {
     scanner.scanFiles(ImmutableList.copyOf(files));
 
     Collection<SourceCode> squidSourceFiles = scanner.getIndex().search(new QueryByType(SourceFile.class));
-    save(context, squidSourceFiles);
+    save(context, squidSourceFiles,visitors,configuration);
   }
 
-  private void save(SensorContext context, Collection<SourceCode> squidSourceFiles) {
+  private void save(SensorContext context, Collection<SourceCode> squidSourceFiles,List<SquidAstVisitor<LexerlessGrammar>> visitors,LuaConfiguration configuration) {
     FileSystem fileSystem = context.fileSystem();
+
     for (SourceCode squidSourceFile : squidSourceFiles) {
       SourceFile squidFile = (SourceFile) squidSourceFile;
 
@@ -117,6 +118,7 @@ public class LuaSquidSensor implements Sensor {
       saveMeasures(context, inputFile, squidFile);
       saveFunctionsComplexityDistribution(context, inputFile, squidFile);
       saveFilesComplexityDistribution(context, inputFile, squidFile);
+
       visitors.add(new LuaTokensVisitor(context, LuaLexer.create(configuration)));
       saveViolations(context, inputFile, squidFile);
     }

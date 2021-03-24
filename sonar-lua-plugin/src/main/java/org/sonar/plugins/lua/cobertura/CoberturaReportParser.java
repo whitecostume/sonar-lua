@@ -30,7 +30,8 @@ import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.coverage.CoverageType;
 import org.sonar.api.batch.sensor.coverage.NewCoverage;
 import org.sonar.api.utils.ParsingUtils;
-import org.sonar.api.utils.StaxParser;
+
+import org.sonar.plugins.lua.StaxParser;
 import org.sonar.plugins.lua.core.Lua;
 
 import javax.xml.stream.XMLStreamException;

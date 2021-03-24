@@ -208,6 +208,12 @@
         <artifactId>google-collect</artifactId>
         <version>1.0</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/com.ctc.wstx/woodstox-osgi -->
+      <dependency>
+        <groupId>com.ctc.wstx</groupId>
+        <artifactId>woodstox-osgi</artifactId>
+        <version>3.2.1.1</version>
+      </dependency>
       <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
       <dependency>
         <groupId>com.google.guava</groupId>

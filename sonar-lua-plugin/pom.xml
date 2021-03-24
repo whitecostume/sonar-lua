@@ -32,6 +32,11 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>lua-squid</artifactId>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.ctc.wstx/woodstox-osgi -->
+    <dependency>
+      <groupId>com.ctc.wstx</groupId>
+      <artifactId>woodstox-osgi</artifactId>
+    </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>lua-checks</artifactId>
