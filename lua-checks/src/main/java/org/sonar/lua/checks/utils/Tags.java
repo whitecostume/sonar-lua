@@ -1,7 +1,7 @@
 /*
  * SonarQube Lua Plugin
- * Copyright (C) 2016 
- * mailto:fati.ahmadi66 AT gmail DOT com
+ * Copyright (C) 2013-2016-2016 SonarSource SA
+ * mailto:contact AT sonarsource DOT com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -22,6 +22,8 @@ package org.sonar.lua.checks.utils;
 public class Tags {
   public static final String BRAIN_OVERLOAD = "brain-overload";
   public static final String CONVENTION = "convention";
+  public static final String PITFALL = "pifall";
+
   private Tags() {
     // This class only defines constants
   }

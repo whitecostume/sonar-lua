@@ -29,6 +29,11 @@
       <groupId>org.sonarsource.sslr</groupId>
       <artifactId>sslr-xpath</artifactId>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -55,6 +60,7 @@
       <artifactId>commons-io</artifactId>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
 </project>

@@ -1,7 +1,7 @@
 /*
  * SonarQube Lua Plugin
- * Copyright (C) 2016 
- * mailto:fati.ahmadi66 AT gmail DOT com
+ * Copyright (C) 2013-2016-2016 SonarSource SA
+ * mailto:contact AT sonarsource DOT com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -39,6 +39,7 @@ import org.sonar.lua.LuaConfiguration;
 import org.sonar.lua.api.LuaMetric;
 import org.sonar.lua.checks.CheckList;
 
+import org.sonar.lua.lexer.LuaLexer;
 import org.sonar.lua.metrics.FileLinesVisitor;
 import org.sonar.plugins.lua.core.Lua;
 import org.sonar.squidbridge.AstScanner;

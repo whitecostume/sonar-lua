@@ -36,6 +36,10 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>lua-checks</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.codehaus.staxmate</groupId>
+      <artifactId>staxmate</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>org.slf4j</groupId>
