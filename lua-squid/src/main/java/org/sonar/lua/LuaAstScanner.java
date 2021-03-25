@@ -142,7 +142,7 @@ public final class LuaAstScanner {
           public SourceCode createSourceCode(SourceCode parentSourceCode, AstNode astNode) {
               seq++;
               
-              SourceFuncCall functionCall = new SourceFuncCall("functionCall" + seq);
+              SourceFunction functionCall = new SourceFunction("functionCall" + seq);
               functionCall.setStartAtLine(astNode.getTokenLine());
               return functionCall;
           }

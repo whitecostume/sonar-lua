@@ -24,7 +24,7 @@ import org.junit.Test;
 import org.sonar.lua.LuaAstScanner;
 import org.sonar.squidbridge.api.SourceFile;
 import org.sonar.squidbridge.checks.CheckMessagesVerifier;
-import org.sonar.lua.SourceFuncCall;
+
 
 import java.io.File;
 
