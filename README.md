@@ -1,6 +1,6 @@
 SonarQube Lua Plugin
 ====================
-
+## This is a fork of Sonar-Lua (https://github.com/SonarQubeCommunity/sonar-lua)
 ## Description
 This plugin enables analysis of Lua project within SonarQube:
 
