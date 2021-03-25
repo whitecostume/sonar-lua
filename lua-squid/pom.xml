@@ -48,8 +48,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.common</groupId>
-      <artifactId>google-collect</artifactId>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
 
     </dependency>
   </dependencies>

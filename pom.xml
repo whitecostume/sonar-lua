@@ -17,7 +17,26 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+
+    <repository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
   </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 
   <parent>
     <groupId>org.sonarsource.parent</groupId>
@@ -203,18 +222,14 @@
         <artifactId>slf4j-api</artifactId>
         <version>1.7.21</version>
       </dependency>
-      <dependency>
-        <groupId>com.google.common</groupId>
-        <artifactId>google-collect</artifactId>
-        <version>1.0</version>
-      </dependency>
+
       <!-- https://mvnrepository.com/artifact/com.ctc.wstx/woodstox-osgi -->
       <dependency>
         <groupId>com.ctc.wstx</groupId>
         <artifactId>woodstox-osgi</artifactId>
         <version>3.2.1.1</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+      <!-- https://mvnrepository.com/artifact/com.google.guava/guava `-->
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>

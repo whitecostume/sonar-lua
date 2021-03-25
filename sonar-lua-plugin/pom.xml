@@ -13,7 +13,7 @@
 
   <name>Lua :: Sonar Plugin</name>
   <description>Enables scanning of Lua source files</description>
-  <url>http://redirect.sonarsource.com/plugins/lua.html</url>
+  <url>https://redirect.sonarsource.com/plugins/lua.html</url>
 
   <properties>
     <sonar.pluginClass>org.sonar.plugins.lua.LuaPlugin</sonar.pluginClass>
@@ -75,6 +75,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -92,6 +93,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.0.0-M3</version>
         <executions>
           <execution>
             <id>enforce-plugin-size</id>
@@ -102,7 +104,7 @@
             <configuration>
               <rules>
                 <requireFilesSize>
-                  <maxsize>1700000</maxsize>
+                  <maxsize>3000000</maxsize>
                   <minsize>1232056</minsize>
                   <files>
                     <file>${project.build.directory}/${project.build.finalName}.jar</file>

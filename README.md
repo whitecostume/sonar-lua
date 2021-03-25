@@ -103,9 +103,8 @@ The following elements increment the complexity by one:
  
  *  XPathCheck
  
- 
- 
-
+#Build
+ * mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true 
  
 
 
